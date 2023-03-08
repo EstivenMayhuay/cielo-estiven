@@ -27,6 +27,16 @@ body {
   color: #310d1c;
 }
 
+.primary {
+  position: absolute;
+  top: 60px;
+  color: white;
+  background-color: #f7418e;
+  font-size: 1.2rem;
+  font-weight: 900;
+  padding: 4px 1.2rem;
+}
+
 .peticion {
   text-align: center;
   font-size: 1.5rem;

@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <p class="peticion">Por favor, leelo despacio y escucha la música :)</p>
+    <p class="peticion">
+      Por favor <strong>Dale Click</strong>, leelo despacio y escucha la música
+      :)
+    </p>
+
+    <button class="primary">Escúchame</button>
 
     <div class="card">
       <p class="text">Para Cielo</p>
@@ -26,17 +31,16 @@
 
     <audio
       src="./audio/main.mp3"
+      id="audio"
       controls
       autoplay
       style="display: none"
     ></audio>
 
-    <!-- <script>
-      audioElement.play();
-    </script> -->
-
-    <!-- <audio autoplay controls>
-      <source src="/audio/main.mp3" type="audio/mp3" />
-    </audio> -->
+    <script>
+      document.querySelector(".primary").addEventListener("click", function () {
+        document.querySelector("#audio").play();
+      });
+    </script>
   </body>
 </html>
